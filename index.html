@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
 <body>
@@ -19,13 +19,13 @@
             <div class="logo">
                 <img id="logo_img" src="img/logo.png" width="125px" alt="로고">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>        
+            <nav class="list-nav">
+                <ul class="ul-nav">
+                    <li class="list-home"><a href="">HOME</a></li>
+                    <li class="list-products"><a href="">Products</a></li>
+                    <li class="list-about"><a href="">About</a></li>
+                    <li class="list-contact"><a href="">Contact</a></li>
+                    <li class="list-account"><a href="">Account</a></li>        
                 </ul>
             </nav>
 
@@ -34,9 +34,9 @@
 
         <div class="row">
             <div class="col-2">
-                <h1>홈페이지 <br />메인제목</h1>
-                <p>Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.</p>
-            <a id="quick_link" href="" class="btn"> 바로가기 &#8594;</a>
+                <h1 class="main-title">홈페이지 <br />메인제목</h1>
+                <p class="sub-title">Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.</p>
+            <a class="quick_link" href="" class="link-btn"> 초특가 바로가기 &#8594;</a>
             </div>
 
             <div class="col-2">
@@ -63,13 +63,13 @@
     </div>
 </div>
 
-<!-- -------------------------------- 상품들  -->
+<!-- -------------------------------- 인기있는 상품들  -->
  <div class="small-container">
-    <h2 class="title">인기 있는 상품들</h2>
+    <h2 class="product-title">인기 있는 상품들</h2>
     <div class="row">
         <div class="col-4">
             <img id="product1" src="img/product1" alt="상품1">
-            <h4>상품이름</h4>
+            <h4 class="product-name">상품이름</h4>
             <div class="rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -78,11 +78,11 @@
                 <i class="far fa-star"></i>
                 <!-- <i class="fas fa-star-half-alt"></i> half -->
             </div>
-            <p>23,000</p>
+            <p class="price">23,000</p>
         </div>
         <div class="col-4">
             <img id="product2" src="img/product2" alt="상품2">
-            <h4>상품이름</h4>
+            <h4 class="product-name">상품이름</h4>
             <div class="rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -91,12 +91,12 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <p>23,000</p>
+            <p class="price">23,000</p>
         </div>
     
         <div class="col-4">
             <img id="product3" src="img/product3" alt="상품3">
-            <h4>상품이름</h4>
+            <h4 class="product-name">상품이름</h4>
             <div class="rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -105,12 +105,12 @@
                 <i class="far fa-star"></i>
                 
             </div>
-            <p>23,000</p>
+            <p class="price">23,000</p>
         </div>
     
         <div class="col-4">
             <img id="product4" src="img/product4" alt="상품4">
-            <h4>상품이름</h4>
+            <h4 class="product-name">상품이름</h4>
             <div class="rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -118,11 +118,196 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <p>23,000</p>
+            <p class="price">23,000</p>
+        </div>
+    </div>
+
+<!-- --------------------------------  최근 상품 -->
+    <h2 class="latest-title">최근 올라온 상품들</h2>
+    <div class="row">
+        <div class="col-4">
+            <img id="product5" src="img/product5" alt="상품5">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="price">23,000</p>
+        </div>
+        <div class="col-4">
+            <img id="product6" src="img/product6" alt="상품6">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="price">23,000</p>
         </div>
     
+        <div class="col-4">
+            <img id="product7" src="img/product7" alt="상품7">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                
+            </div>
+            <p class="price">23,000</p>
+        </div>
+    
+        <div class="col-4">
+            <img id="product8" src="img/product8" alt="상품8">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price">23,000</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img id="product9" src="img/product9" alt="상품9">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="price">23,000</p>
+        </div>
+        <div class="col-4">
+            <img id="product10" src="img/product10" alt="상품10">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="price">23,000</p>
+        </div>
+    
+        <div class="col-4">
+            <img id="product11" src="img/product11" alt="상품11">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                
+            </div>
+            <p class="price">23,000</p>
+        </div>
+    
+        <div class="col-4">
+            <img id="product12" src="img/product12" alt="상품12">
+            <h4 class="product-name">상품이름</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price">23,000</p>
+        </div>
     </div>
  </div>
+
+<!-- --------------------------------  offer -->
+ <div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img id="offer-img" src="img/exclusive.png" alt="특별판매">
+            </div>
+            <div class="col-2">
+                <p class="exclusive-p">여기에서만 보실 수 있는 상품!</p>
+                <h1 class="exclusive-title">특별제작 상품스</h1>
+                <small class="exclusive-subtitle">이곳에서 특별히 제작된 상품으로 아주 저렴한 가격에 볼 수 있슴다. <br> 이곳에서 특별히 제작된 상품으로 아주 아주아주 저렴한 가격에 볼 수 있다.</small>
+                <a class="link-btn" href="#">지금 사세요! &#8594;</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- -------------------------------- testimonial 후기  -->
+<div class="review">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                    너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요
+                </p>
+                <i class="fas fa-quote-right"></i>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <img class="review-user" src="img/user1.png" alt="사용자1">
+                <h3 class="user1-name">김감비</h3>
+            </div>
+
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                    너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요
+                </p>
+                <i class="fas fa-quote-right"></i>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <img class="review-user" src="img/user2.png" alt="사용자2">
+                <h3 class="user2-name">감비냥</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                    너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요너무좋아요
+                </p>
+                <i class="fas fa-quote-right"></i>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <img class="review-user" src="img/user3.png" alt="사용자3">
+                <h3 class="user3-name">감비냥</h3>
+            </div>
+        </div>
+    </div>
+</div>
     
     
 </body>
