@@ -48,3 +48,28 @@ window.addEventListener('load', function() {
     const content = document.querySelector('.content');
     content.classList.add('active');
 });
+
+// 지도 ==========================================================
+  // 네이버 지도 초기화
+  var mapOptions = {
+    center: new naver.maps.LatLng(35.1795543, 128.1076769), // 진주시 중심 좌표
+    zoom: 12,
+    zoomControl: true,
+    zoomControlOptions: {
+        position: naver.maps.Position.TOP_RIGHT
+    }
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+
+// 진주시 중심에 마커 생성
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(35.1795543, 128.1076769),
+    map: map,
+    title: '진주시'
+});
+
+// 반응형 지도 크기 조정
+window.addEventListener('resize', function() {
+    map.setSize(new naver.maps.Size(window.innerWidth, window.innerHeight));
+});
