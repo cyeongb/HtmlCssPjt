@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진주 홍보 웹사이트</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">진주</a>
+        <!--  로고에는 하모 아이콘 넣을지 고민중. -->
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+      <div class="video-container">
+          <div class="overlay"></div>
+          <iframe class="video-bg" 
+              src="https://www.youtube.com/embed/5_CHfuZNMdQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=5_CHfuZNMdQ&mute=1" 
+              frameborder="0" 
+              allowfullscreen>
+            </iframe>
+      </div>
+      <div class="content">
+          <h1 class="text-reveal">Welcome to JINJU</h1>
+          <!-- <p>우리는 최고의 비디오 제작 경험을 제공합니다. 전문적인 서비스와 창의적인 아이디어로 당신의 이야기를 세상에 전합니다.</p> -->
+          <!-- <a href="#portfolio" class="btn">Our Work</a> -->
+          <a href="https://www.jinju.go.kr/main.web" target="_blank" class="btn text-reveal">진주 방문하기</a>
+      </div>
+  </section>
+
+  <!-- 배경을 좀 바꾸면 좋을듯 -->
+    <section class="about" id="about">
+        <div class="section-content">
+            <h2 class="section-title">About Us</h2>
+            <p>우리는 10년 이상의 경험을 가진 전문 비디오 제작 팀입니다. 모든 프로젝트에 열정과 창의성을 담아 최고의 결과물을 만들어냅니다. 당신의 브랜드와 이야기를 가장 효과적으로 전달할 수 있는 방법을 항상 고민합니다.</p>
+            <div class="row">
+                <div class="col">
+                    <h3>Our Mission</h3>
+                    <p>고객의 아이디어를 시각적으로 표현하고 감동을 전달하는 영상을 제작합니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Our Vision</h3>
+                    <p>창의적인 시각과 최신 기술을 결합해 새로운 영상 경험을 만들어 냅니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Our Values</h3>
+                    <p>품질, 창의성, 정직함, 그리고 고객 만족을 가장 중요한 가치로 생각합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="banner">
+          <!-- section-content -->
+            <h2 class="section-title"></h2>
+            <div class="video-container">
+              <div class="overlay"></div>
+              <iframe 
+              width=100%
+              height=100%
+              src="https://www.youtube.com/embed/pVb6nJHB-YU?controls=0&si=AfTQVhaoCwqMP02R&autoplay=1&loop=1&mute=1" title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+              </iframe>
+          </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-content">
+            <h2 class="section-title">Contact Us</h2>
+            <p style="text-align: center; margin-bottom: 30px;">프로젝트에 대해 논의하거나 문의사항이 있으시면 언제든지 연락주세요.</p>
+            <div class="row" style="justify-content: center;">
+                <div class="col" style="text-align: center;">
+                    <h3>Email</h3>
+                    <p>contact@videography.com</p>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <h3>Phone</h3>
+                    <p>+82 10 1234 5678</p>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <h3>Address</h3>
+                    <p>서울특별시 강남구 테헤란로 123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
